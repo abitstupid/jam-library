@@ -64,7 +64,7 @@
 }
 
 .textBodyColor {
-    color: #7A7A7A;
+    color: #2e2e2e;
 }
 
 .textHeadingSmall {
@@ -96,4 +96,20 @@ a:hover {
     background: -webkit-linear-gradient(300deg, #b30808 -9.49%, #aa7a00 150%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+header li button {
+    outline: none;
+    border: 0px;
+    background: #FFFFFF !important;
+    border: 0px;
+    outline: none;
+}
+
+.askInputButton {
+    border: 2px solid #FF3C3C !important;
 }

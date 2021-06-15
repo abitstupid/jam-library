@@ -147,7 +147,6 @@ ul a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
-
   /* 48em = 768px */
 
 @media (min-width: 48em) {

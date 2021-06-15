@@ -9,7 +9,21 @@
         <link rel="stylesheet" href="root.css">
         <!-- <link rel="stylesheet" href="accessibility.css"> -->
         <link rel="stylesheet" href="/css/home.css">
-        
+        <script>
+            function toggleTheme() {
+                // Obtains an array of all <link>
+                // elements.
+                // Select your element using indexing.
+                var theme = document.getElementsByTagName('link')[2];
+                // Change the value of href attribute 
+                // to change the css sheet.
+                if (theme.getAttribute('href') == 'root.css') {
+                    theme.setAttribute('href', 'accessibility.css');
+                } else {
+                    theme.setAttribute('href', 'root.css');
+                }
+            }
+        </script>
     </head>
     <body class="background">
         <header class="header">
@@ -20,6 +34,7 @@
                 <li><a href="#work" class="nav-link textBody scndGradientText">Home</a></li>
                 <li><a href="#about" class="nav-link textBody scndGradientText">Subjects</a></li>
                 <li><a href="#careers" class=" nav-link textBody scndGradientText">About Us</a></li>
+                <li><button id="theme" onclick="toggleTheme()"><a class=" nav-link textBody scndGradientText">For Visually Impaired</a></button></li>
             </ul>
         </header>
         <main>
@@ -45,9 +60,11 @@
                     </div>
                 </div>
                 <div class="physicsContainer">
-                    <div class="physics subject cmpntOut">
-                        <p class="prmyGradientText textHeadingSmall">Physics</p>
-                    </div>
+                    <a href="physics.html">
+                        <div class="physics subject cmpntOut">
+                            <p class="prmyGradientText textHeadingSmall">Physics</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="chemistryContainer">
                     <div class="chemistry subject cmpntOut">
