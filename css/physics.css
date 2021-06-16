@@ -1,0 +1,373 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Reponsive Nav */
+
+.header {
+    /* background-color: #fff; */
+    /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    margin-bottom: 24px;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 8px !important;
+    /* background-color: #fff; */
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    /* border-right: 1px solid #f4f4f4; */
+    text-decoration: none;
+}
+
+/* .header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+} */
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    /* background: #333; */
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: linear-gradient(90deg, #1655F0 -16.38%, #44DAE1 112.94%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+ul a:link ,ul a:active,ul a:visited {
+    background: linear-gradient(300deg, #1655F0 -16.38%, #44DAE1 112.94%);
+    background-clip: text;
+    color: transparent;
+    background: -webkit-linear-gradient(300deg, #1655F0 -16.38%, #44DAE1 112.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    text-decoration: none;
+}
+
+ul a:hover {
+    background: linear-gradient(300deg, #3b6be6 -16.38%, #0f9299 112.94%);
+    background-clip: text;
+    color: transparent;
+    background: -webkit-linear-gradient(300deg, #3b6be6 -16.38%, #0f9299 112.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+  /* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 10px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+/* Nav End */
+
+.mathHeadingBig {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.daysJamContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.daysJam {
+    margin-bottom: 16px;
+}
+
+.daysNum {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.daysNumText {
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 500;
+}
+
+.visitorCount {
+    border-radius: 8px;
+    height: 40px;
+    width: 128px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentTypeContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    margin: 16px;
+    padding: 8px;
+    height: 48px;
+    white-space: nowrap;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.headingsContent {
+    margin-bottom: 16px;
+}
+
+.textContentPara {
+    margin-bottom: 24px;
+}
+
+.studyPlanDocContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.studyPlanners {
+    margin: 16px;
+    padding: 8px;
+    height: 48px;
+    width: 120px;
+    white-space: nowrap;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contributionContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 16px !important;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.sendMessageLine {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.askAnything {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.askInput {
+    outline: none !important;
+    height: 32px;
+    width: 100%;
+    border-radius: 8px;
+    border: 0px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+}
+
+.askInput:focus {
+    height: 48px;
+    background: #ffffff;
+    -webkit-box-shadow: -8px -8px 20px 1px rgba(255, 255, 255, 0.60), 8px 8px 26px -5px rgba(0, 0, 0, 0.18) !important;
+    -moz-box-shadow: -8px -8px 20px 1px rgba(255, 255, 255, 0.60), 8px 8px 26px -5px rgba(0, 0, 0, 0.18) !important;
+    box-shadow: -8px -8px 20px 1px rgba(255, 255, 255, 0.60), 8px 8px 26px -5px rgba(0, 0, 0, 0.18) !important;
+}
+
+.askInputButton {
+    outline: none !important;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 8px;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width:768px) {
+    body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }   
+
+    .daysJamContainer {
+        flex-flow: row nowrap;
+    }
+
+    .daysJam {
+        margin-bottom: 0px;
+    }
+
+    .daysNum {
+        margin-left: 24px;
+    }
+
+    .daysNumText {
+        font-weight: bold;
+    }
+
+
+}
+
+@media only screen and (min-width:992px) {
+
+    .inputContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    
+    .askInput {
+        width: 40%;
+        margin-bottom: 0px;
+    }
+    
+    .askInputButton {
+        margin-left: 24px;
+        height: 35px;
+        margin-bottom: 0px;
+    }
+
+}   
+
+@media only screen and (min-width:1200px) {
+    .contributionContainer {
+        padding: 32px !important;
+    }
+}
+
