@@ -151,10 +151,6 @@ ul a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
-
-header ul li button {
-    cursor: pointer;
-}
   /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -176,10 +172,68 @@ header ul li button {
 
 /* Nav End */
 
+
+/* Cards */
+.cardContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.cardContainer .cardBox {
+    position: relative;;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 64px;
+}
+
+.photo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    top: -2.5rem;
+}    
+
+.cardContainer .card {
+    height: 100%;
+    /* width: 600px; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    padding: 24px;
+    padding-top: 5rem;
+
+}
+
+.cardContainer .profilesContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.profileIcon {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+/* cards end */
+
 .mathHeadingBig {
     font-size: 40px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 64px;
 }
 
 .daysJamContainer {
@@ -237,104 +291,6 @@ header ul li button {
 }
 
 
-.headingsContent {
-    margin-bottom: 16px;
-}
-
-.textContentPara {
-    margin-bottom: 24px;
-}
-
-.studyPlanDocContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.studyPlanners {
-    margin: 16px;
-    padding: 8px;
-    height: 48px;
-    width: 120px;
-    white-space: nowrap;
-    border-radius: 8px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}   
-
-.recomContainer {
-    flex: 1 1 100%;
-}
-
-.recomBooksContainer {
-    display: flex;
-    padding: 8px;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.bookRec{
-    margin: 16px;
-    height: 48px;
-    padding: 8px;
-    white-space: nowrap;
-    border-radius: 8px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}   
-
-.telegramContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.channelContainer {
-    flex: 1 1 50%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-self: center;
-    align-items: center;
-
-}
-
-.channelCircle {
-    margin: 16px;
-    padding: 8px;
-    height: 120px;
-    width: 120px;
-    white-space: nowrap;
-    border-radius: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}   
-
-
-.contributionContainer {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    padding: 16px !important;
-    color: #FFFFFF;
-    margin-bottom: 8px;
-    margin-top: 48px;
-}
-
-.sendMessageLine {
-    text-align: center;
-    margin-bottom: 24px;
-}
 
 .askAnything {
     text-align: center;
@@ -401,8 +357,20 @@ header ul li button {
     .daysNumText {
         font-weight: bold;
     }
-
-
+    
+    .cardContainer .cardBox {
+        /* width: 100%; */
+        height: 20rem;
+    }
+    
+    .cardContainer .card {
+        height: 100%;
+        width: 600px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width:992px) {
@@ -434,7 +402,6 @@ header ul li button {
         flex: 1 1 15%;
     
     }
-    
 
 }   
 

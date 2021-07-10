@@ -1,5 +1,9 @@
-html {
-    scroll-behavior: smooth;
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
@@ -151,10 +155,6 @@ ul a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
-
-header ul li button {
-    cursor: pointer;
-}
   /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -176,11 +176,6 @@ header ul li button {
 
 /* Nav End */
 
-.mathHeadingBig {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 24px;
-}
 
 .daysJamContainer {
     display: flex;
@@ -208,117 +203,6 @@ header ul li button {
     font-weight: 500;
 }
 
-.visitorCount {
-    border-radius: 8px;
-    height: 40px;
-    width: 128px;
-    margin-left: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contentTypeContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    margin: 16px;
-    padding: 8px;
-    height: 48px;
-    white-space: nowrap;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.headingsContent {
-    margin-bottom: 16px;
-}
-
-.textContentPara {
-    margin-bottom: 24px;
-}
-
-.studyPlanDocContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.studyPlanners {
-    margin: 16px;
-    padding: 8px;
-    height: 48px;
-    width: 120px;
-    white-space: nowrap;
-    border-radius: 8px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}   
-
-.recomContainer {
-    flex: 1 1 100%;
-}
-
-.recomBooksContainer {
-    display: flex;
-    padding: 8px;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.bookRec{
-    margin: 16px;
-    height: 48px;
-    padding: 8px;
-    white-space: nowrap;
-    border-radius: 8px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}   
-
-.telegramContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.channelContainer {
-    flex: 1 1 50%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-self: center;
-    align-items: center;
-
-}
-
-.channelCircle {
-    margin: 16px;
-    padding: 8px;
-    height: 120px;
-    width: 120px;
-    white-space: nowrap;
-    border-radius: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}   
-
-
 .contributionContainer {
     display: flex;
     flex-flow: column nowrap;
@@ -328,7 +212,6 @@ header ul li button {
     padding: 16px !important;
     color: #FFFFFF;
     margin-bottom: 8px;
-    margin-top: 48px;
 }
 
 .sendMessageLine {
@@ -336,10 +219,51 @@ header ul li button {
     margin-bottom: 24px;
 }
 
+.subjectsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.mathsContainer , .physicsContainer , .chemistryContainer , .biologyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 16px;
+}
+
+.subject {
+    height: 152px;
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherSubjects {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+.whatJam {
+    margin-bottom: 16px;
+}
+
+.whatJamLibrary {
+    margin-bottom: 16px;
+}
+
+.whatJamText {
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
 .askAnything {
     text-align: center;
     margin-bottom: 16px;
-    margin-top: 48px;
 }
 
 .inputContainer {
@@ -380,6 +304,10 @@ header ul li button {
     margin-bottom: 24px;
 }
 
+.lastDiv {
+    margin-bottom: 56px;
+}
+
 @media only screen and (min-width:768px) {
     body{
         padding-left: 15%;
@@ -406,6 +334,14 @@ header ul li button {
 }
 
 @media only screen and (min-width:992px) {
+    .mathsContainer , .physicsContainer , .chemistryContainer , .biologyContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+        margin-bottom: 16px;
+    }
 
     .inputContainer {
         display: flex;
@@ -425,16 +361,6 @@ header ul li button {
         height: 35px;
         margin-bottom: 0px;
     }
-
-    .recomContainer {
-        flex: 1 1 50%;
-    }
-
-    .channelContainer {
-        flex: 1 1 15%;
-    
-    }
-    
 
 }   
 

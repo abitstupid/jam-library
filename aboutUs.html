@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Jam Library | Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="root.css">
+        <!-- <link rel="stylesheet" href="accessibility.css"> -->
+        <link rel="stylesheet" href="css/aboutUs.css">
+        <script>
+            function toggleTheme() {
+                // Obtains an array of all <link>
+                // elements.
+                // Select your element using indexing.
+                var theme = document.getElementsByTagName('link')[2];
+                // Change the value of href attribute 
+                // to change the css sheet.
+                if (theme.getAttribute('href') == 'root.css') {
+                    theme.setAttribute('href', 'accessibility.css');
+                } else {
+                    theme.setAttribute('href', 'root.css');
+                }
+            }
+        </script>
+    </head>
+    <body class="background">
+        <header class="header">
+            <a href="index.html" id="top "class="logo">JAM-Library</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon scndGradient"></span></label>
+            <ul class="menu">
+                <li><a href="index.html" class="nav-link textBody scndGradientText">Home</a></li>
+                <li><a href="otherSubjects.html" class="nav-link textBody scndGradientText">Subjects</a></li>
+                <li><a href="aboutUs.html" class=" nav-link textBody scndGradientText">About Us</a></li>
+                <li><button id="theme" onclick="toggleTheme()"><a class=" nav-link textBody scndGradientText">For Visually Impaired</a></button></li>
+            </ul>
+        </header>
+        <main>
+            <h1 class="prmyGradientText textHeadingBig mathHeadingBig">Creators</h1>
+            <!-- <div class="daysJamContainer">
+                <h2 class="daysJam scndGradientText textHeadingBig">
+                    Days Till JAM 2021
+                </h2>
+                <div class="daysNum cmpntOut">
+                    <p class="daysNumText redText textBody">251</p>
+                </div>
+            </div>
+
+            <div class="daysJamContainer">
+                <h2 class="daysJam scndGradientText textBody">
+                    Visitors' Count (This Week)
+                </h2>
+                <div class="visitorCount cmpntOut">
+                    <p class="visitorCountNum scndGradientText textBody">25111</p>
+                </div>
+            </div> -->
+            <div class="profileContainer">
+
+                <div class="cardContainer">
+                    <div class="cardBox">
+                        <div class="photo cmpntInset">
+                            
+                        </div>
+                        <div class="card cmpntOut">
+                            <div class="name textBody redText">Hemant Rai</div>
+                            <div class="workContribution textBody textBodyColor">UX Developer, Visual Designer , Front-End Developer</div>
+                            <div class="aboutCreator"></div>
+                            <div class="profilesContainer">
+                                <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardBox">
+                        <div class="cardBox">
+                            <div class="photo cmpntInset">
+                                
+                            </div>
+                            <div class="card cmpntOut">
+                                <div class="name textBody redText">Hemant Rai</div>
+                                <div class="workContribution textBody textBodyColor">UX Developer, Visual Designer , Front-End Developer</div>
+                                <div class="aboutCreator"></div>
+                                <div class="profilesContainer">
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div> 
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="cardBox">
+                        <div class="cardBox">
+                            <div class="photo cmpntInset">
+                                
+                            </div>
+                            <div class="card cmpntOut">
+                                <div class="name textBody redText">Hemant Rai</div>
+                                <div class="workContribution textBody textBodyColor">UX Developer, Visual Designer , Front-End Developer</div>
+                                <div class="aboutCreator"></div>
+                                <div class="profilesContainer">
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div>
+                                    <div class="profileIcon cmpntOut"></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
